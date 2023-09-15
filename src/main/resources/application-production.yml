@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: postgresql://postgres:${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  sql:
+    init:
+      mode: always
+
+
+#${} --> environment variable
+
