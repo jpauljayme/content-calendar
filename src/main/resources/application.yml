@@ -1,0 +1,56 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  sql:
+    init:
+      mode: always
+
+
+#spring.h2.console.enabled=true
+#spring.datasource.generate-unique-name=false
+#spring.datasource.name=content
+
+#spring:
+#  h2:
+#    console:
+#      enabled: true
+#  #spring.sql.init.mode=always
+#  #spring.sql.schema-locations=default is resources
+#  datasource:
+#    generate-unique-name: false
+#    name: content
+#  output:
+#    ansi:
+#      enabled: always
+#  profiles:
+#    active:
+#      - dev
+
+#logging:
+#  level:
+#    root: DEBUG
+#logging.level.org.springframework.jdbc=DEBUG
+#spring.output.ansi.enabled=always
+
+  #server.port=8085
+
+#mayhm.welcomeMessage=You are in dev now faggots
+#mayhm.about=She's starting to go thru it and failingly so!
+
+mayhm:
+  welcome-message: You are in dev now fags!
+  about: She's starting to go thru it and failingly so!
+#spring.profiles.active=dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+  endpoint:
+    health:
+      show-details: always
+
