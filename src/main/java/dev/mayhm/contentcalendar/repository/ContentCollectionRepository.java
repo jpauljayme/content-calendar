@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 //In memory record for testing
-@Repository
+//@Repository
 public class ContentCollectionRepository {
 
     private List<Content> contentList = new ArrayList<>();
